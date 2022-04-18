@@ -7,6 +7,7 @@ app.use(bodyparser.urlencoded({extended:true}))
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
+    let asd="asd"
     res.sendFile(__dirname+'/index.html')
 })
 
@@ -15,6 +16,7 @@ app.get('/bmicalc',((req, res) => {
 }))
 
 app.post('/bmicalc',((req, res) => {
+    let a=2
     res.sendFile(__dirname+'/bmicalc.html')
 }))
 
